@@ -4,7 +4,7 @@
     + **mkdir** : Crear Directorio
     + **mv** : Mover/Renombrar Directorio
     + **rm** : Borrar Directorio
-    + **pwd** : 
+    + **pwd** : Muestra la ruta actual
 
 - ###Se creo un repositorio en Git y se asocio con un remoto en GitHub
     + **git config** : Configuracion realizada Git
