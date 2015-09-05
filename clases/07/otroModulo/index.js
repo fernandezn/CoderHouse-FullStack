@@ -1,0 +1,1 @@
+exports.text = "Soy el index de otro modulo";

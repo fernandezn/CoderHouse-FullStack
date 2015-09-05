@@ -1,9 +1,9 @@
 app.controller('ResultadoCtrl', ['$scope','$stateParams','$http', function($scope,$stateParams,$http){
-
-	var apiURL = 'https://api.mercadolibre.com/sites/MLA/search?q=' + $stateParams.query;
 	
-	$http.get(apiURL).then(function(response){
-		console.log(response.data.results);
+	$http.get('https://api.mercadolibre.com/sites/MLA/search',{ 
+		params : { q : $stateParams.query, limit : 10 }
+	}).then(function(response){
+		$scope.items = response.data.results;
 	}, function(error){
 		console.log(error);
 	});
